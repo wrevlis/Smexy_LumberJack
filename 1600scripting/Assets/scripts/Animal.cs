@@ -2,22 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu()]
+public class Animal : ScriptableObject {
 
+    public float Health = 1.0f;
+    public float Speed = 1.0f;
+    public float Strength = 1.0f;
+    public int LegCount = 2;
 
-public class Animal : MonoBehaviour {
-
-    public float Speed;
-    public int PowerLevel;
-    public string PlayerName;
-
-    // Use this for initialization
-    void Start () {
-        //transform.Rotate(0, Speed, 0);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        transform.Rotate(Speed,Speed,0);
-        transform.Translate(Speed,0,0);
-	}
 }
