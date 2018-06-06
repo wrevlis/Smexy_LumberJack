@@ -8,12 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82dfe61319746534d93391078eb18b90, type: 3}
-  m_Name: Dog
+  m_Script: {fileID: 11500000, guid: 7874a46544b451744b11e8b68cb0d359, type: 3}
+  m_Name: New Float Data
   m_EditorClassIdentifier: 
-  Health: 46
-  Speed: 1
-  Strength: 1
-  LegCount: 2
-  HairCount: 1000
-  HairColor: {r: 0.35294116, g: 0.27748477, b: 0.031141875, a: 1}
+  Value: 1
