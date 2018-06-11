@@ -7,7 +7,8 @@ public class ColorBehavior : MonoBehaviour {
 
     public CangeUIColor ChangeColor;
 
-	void Start () {
+	void Start ()
+    {
         ChangeColor.ColorUI(GetComponent<Image>());
 	}
 	
