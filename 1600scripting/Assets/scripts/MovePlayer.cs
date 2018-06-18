@@ -11,6 +11,7 @@ public class MovePlayer : MonoBehaviour
     public float Speed = 10.0f;
     public float Gravity = 3f;
     public float JumpHeight = 100.0f;
+    public bool CanRun = true;
 
 	// Use this for initialization
 	void Start ()
@@ -21,12 +22,15 @@ public class MovePlayer : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && controller.isGrounded)
         {
             newPosition.y = JumpHeight;
         }
 
-        newPosition.x = Speed * Input.GetAxis("Horizontal");
+        if (CanRun)
+        {
+            newPosition.x = Speed * Input.GetAxis("Horizontal");
+        }
         newPosition.y -= Gravity;
         controller.Move(newPosition * Time.deltaTime);
 	}
