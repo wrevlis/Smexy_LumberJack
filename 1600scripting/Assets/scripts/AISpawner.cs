@@ -15,7 +15,7 @@ public class AISpawner : MonoBehaviour
         StartCoroutine(StartSpawn());
 	}
 
-    IEnumerator StartSpawn()
+    private IEnumerator StartSpawn()
     {
         while (aiCount > 0)
         {
@@ -24,6 +24,7 @@ public class AISpawner : MonoBehaviour
             aiCount--;
             yield return new WaitForSeconds(CurrentLevel.Time);
         }
+        CurrentLevel.CheckAICount(aiCount);
     }
 	
 
