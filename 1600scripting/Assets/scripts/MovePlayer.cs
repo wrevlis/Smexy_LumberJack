@@ -30,6 +30,7 @@ public class MovePlayer : MonoBehaviour
         if (CanRun)
         {
             newPosition.x = Speed * Input.GetAxis("Horizontal");
+            newPosition.z = Speed * Input.GetAxis("Vertical");
         }
         newPosition.y -= Gravity;
         controller.Move(newPosition * Time.deltaTime);

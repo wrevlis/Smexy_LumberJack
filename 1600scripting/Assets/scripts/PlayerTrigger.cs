@@ -18,4 +18,10 @@ public class PlayerTrigger : MonoBehaviour {
     {
         HealthLevel.Value -= EvilPower.Value;
 	}
+
+    //Temp for development
+    private void OnDisable()
+    {
+        HealthLevel.Value = 1;
+    }
 }

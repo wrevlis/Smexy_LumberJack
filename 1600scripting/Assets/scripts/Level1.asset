@@ -8,7 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7874a46544b451744b11e8b68cb0d359, type: 3}
-  m_Name: Health Bar Value
+  m_Script: {fileID: 11500000, guid: 448c5081565c932489ff4fca88275b32, type: 3}
+  m_Name: Level1
   m_EditorClassIdentifier: 
-  Value: 1
+  AiCount: 5
+  Time: 2
