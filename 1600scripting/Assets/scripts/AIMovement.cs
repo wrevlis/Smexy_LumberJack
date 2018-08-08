@@ -11,6 +11,14 @@ public class AIMovement : MonoBehaviour
     public Transform Destination;
     public AIControll Control;
 
-
+    private void Start()
+    {
+        Agent = GetComponent<NavMeshAgent>();
+        Control.ConfigAI(Agent);
+    }
 	
+    private void Update()
+    {
+        Agent.destination = Destination.position;
+    }
 }
